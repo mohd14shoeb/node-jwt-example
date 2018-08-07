@@ -1,0 +1,17 @@
+{
+  "name": "node-jwt-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.3.0",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "xtemplate": "^4.6.1",
+    "xtpl": "^3.4.0"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node.js JWT Example</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <h1>Node.js JWT Example</h1>
+  <span>Copy token: </span>
+  <p>{{token}}</p>
+
+  <p><input type="text" name="token" id="jwt"></p>
+  <hr>
+  <input type="button" value="send token" onclick="send()">
+  <script>
+    function send() {
+      const token = document.getElementById('jwt').value
+      axios.post('/', {
+        token: token,
+      }).then(function (res) {
+        alert('success!')
+      }).catch(function (err) {
+         alert('fail!')
+      })
+    }
+
+  </script>
+</body>
+
+</html>
